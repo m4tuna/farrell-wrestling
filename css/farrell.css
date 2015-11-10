@@ -1,0 +1,210 @@
+/*  -------------------------------------------------------------
+    CSS - STYLE : Farrell CSS
+    - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    Filename:  style.css
+    Date:      Feb 22, 2015
+    Author:    Mike Fortuna http://mikefortuna.com
+    ------------------------------------------------------------- */
+
+/* =========================== GENERAL  =========================== */
+
+a:hover { color:#7F0707 !important; }
+
+
+.download-btn { background:#F7EFD2; border-radius:2px; padding: 15px 20px;
+color: #731717;
+text-align: center;
+font-weight: bold; box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.17);  }
+
+.sched-btn { background:#731717; border-radius:2px; padding: 15px 20px;
+color: #F7EFD2;
+text-align: center;
+font-weight: bold; box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.17);   }
+.sched-btn:hover { color:#fff !important; }
+
+.header-news { margin-left: 27%; float: left; }
+
+#parallax-bg { background-size: contain; margin-top: 95px; min-width:1160px; }
+
+.header-wrap { background-color:rgba(255, 255, 255, 0.98); box-shadow: 0px 1px 3px rgba(79, 79, 79, 0.65); }
+
+.header-search-icon:before { color:#7F0707 !important;  }
+#masthead .search-form { background:#7F0707 !important; }
+
+.main-navigation a { text-transform:uppercase; font-size:18px; color:#7F0707 !important; }
+.main-navigation a:hover, .main-navigation ul li.current-menu-item a, .main-navigation ul li.current_page_ancestor a, .main-navigation ul li.current-menu-ancestor a, .main-navigation ul li.current_page_item a, .main-navigation ul li:hover > a,
+.main-navigation li:hover, .main-navigation a:hover, .main-navigation li:hover a {  background:#7F0707 !important; color:#fff !important; }
+.main-navigation li ul li { background:#C7BF2C !important; color:#000 !important; }
+/* .main-navigation li:hover a { background:#fff !important; color:#C7BF2C !important; } */
+
+.widget-area aside, .inner-wrap .page_text_container, .site-main article { border: 1px solid #D2D2D2; }
+
+#content { border-top:1px solid #D2D2D2;  }
+
+
+/* =========================== OWL  =========================== */
+
+.owl .item{
+  margin: 3px;
+}
+.owl .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* =========================== PAGE STYLES  =========================== */
+
+.kids-club h1 { margin-bottom:50px; }
+
+.tribe-events-category-tourney { border: 2px dashed #982727; margin-top: 8px !important;}
+.tribe-events-category-dual { border: 2px dashed #E5C857; margin-top: 8px !important;}
+.tribe-events-category-kids { border: 2px dashed #57CAE5; margin-top: 8px !important;}
+
+#tribe-events { text-align: center; }
+#tribe-events-footer { padding: 18px 30px 0; }
+.tribe-events-meta-group-gmap { float: left; clear: both; width:100% !important; }
+#tribe-events .tribe-events-content p, .tribe-events-before-html p, .tribe-events-after-html p {
+	width: 75%;
+	margin: 10px auto 5px;
+}
+
+.tribe-events-back { float:left; text-align:left; margin-left:25px; margin-top:10px; }
+
+
+
+
+/* =========================== OWL THEME =========================== */
+.owl-theme .owl-controls{
+	margin-top: 10px;
+	text-align: center;
+}
+
+/* Styling Next and Prev buttons */
+
+.owl-theme .owl-controls .owl-buttons div{
+	color: #FFF;
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+	margin: 5px;
+	padding: 3px 10px;
+	font-size: 12px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	background: #869791;
+	filter: Alpha(Opacity=50);/*IE7 fix*/
+	opacity: 0.5;
+}
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+.owl-theme .owl-controls.clickable .owl-buttons div:hover{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+	text-decoration: none;
+}
+
+/* Styling Pagination*/
+
+.owl-theme .owl-controls .owl-page{
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+}
+.owl-theme .owl-controls .owl-page span{
+	display: block;
+	width: 12px;
+	height: 12px;
+	margin: 5px 7px;
+	filter: Alpha(Opacity=50);/*IE7 fix*/
+	opacity: 0.5;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	background: #869791;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+}
+
+/* If PaginationNumbers is true */
+
+.owl-theme .owl-controls .owl-page span.owl-numbers{
+	height: auto;
+	width: auto;
+	color: #FFF;
+	padding: 2px 10px;
+	font-size: 12px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+/* preloading images */
+.owl-item.loading{
+	min-height: 150px;
+	background: url(AjaxLoader.gif) no-repeat center center
+}
+
+
+
+
+/* =========================== RESPONSIVE  =========================== */
+
+
+@media screen and (max-width: 500px) {
+
+	#masthead {
+		margin-bottom: 0px !important;
+	}
+
+	#parallax-bg, .header-search-icon { display:none; }
+
+	.main-small-navigation ul { float:left; margin-left: -250px; width: 200px; }
+
+	.header-news {
+		margin-left: 2%;
+		float: none;
+		font-size: 20px;
+	}
+
+}
+
+@media screen and (min-width: 1300px) {
+
+
+	#parallax-bg { margin-top: 65px;
+		min-width: 1160px;
+		height: 390px;}
+
+	}
+
+
+@media screen and (min-width: 1090px) {
+	#parallax-bg { margin-top: 65px; }
+}
+
+
+@media screen and (max-width: 945px) {
+
+}
+
+
+@media screen and (max-width: 660px) {
+
+}
+
+
+@media screen and (max-width: 400px) {
+
+
+}
+
+
+@media screen and (max-width: 300px) {
+
+}
